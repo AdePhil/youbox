@@ -1,0 +1,29 @@
+@import 'styles/_base';
+@import 'styles/_utils';
+
+* {
+  box-sizing: border-box;
+}
+:root {
+  --black: #0e0e10;
+  --black2: rgb(24, 24, 27);
+  --gray: #464649;
+  --gray2: #1F1F23;
+  --white: #fff;
+  --red: #FE0000;
+  --header-height: 60px;
+  --text-secondary: #aaa;
+  --blue: #3ea6ff;
+}
+
+body {
+ background-color: var(--black);
+ margin: 0;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+   sans-serif;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ font-family: Roboto, Arial, sans-serif;
+ ;
+}

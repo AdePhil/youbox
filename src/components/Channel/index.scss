@@ -1,0 +1,46 @@
+.channel{
+  display: flex;
+  padding: 8px 24px;
+  align-items: center;
+
+  &__image {
+    border-radius: 60%;
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+  }
+
+  &__channel-name {
+    margin:  0;
+    flex: 1;
+    font-size: 13px;
+  }
+
+  .new-video {
+    width: 6px;
+    height: 6px;
+    background-color: var(--blue);
+    border-radius: 50%;
+  }
+
+  .live-icon {
+    width: 10px;
+    height: 10px;
+    align-self: flex-start;
+    margin-top: -8px;
+    
+
+    svg {
+      stroke:  var(--red);
+      fill: var(--red);
+      width: 20px;
+      height: 20px;
+      path {
+        stroke: var(--red);
+      }
+      circle {
+        fill:  var(--red)
+      }
+    }
+  }
+}

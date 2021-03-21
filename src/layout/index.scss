@@ -1,0 +1,8 @@
+.app {
+  height: 100vh;
+  display: flex;
+  &__main-container {
+    margin-top: var(--header-height);
+    display: flex;
+  }
+}
