@@ -1,4 +1,4 @@
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 import AppLayout from './layout/AppLayout';
 import './App.scss';
 

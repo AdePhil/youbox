@@ -4,5 +4,15 @@
   &__main-container {
     margin-top: var(--header-height);
     display: flex;
+    width: 100%;
+    height: calc(100vh - 60px);
+    .main {
+      padding: 30px 40px;
+      height: calc(100vh - 60px);
+      overflow-y: scroll;
+      width: 100%;
+      flex: 1;
+    }
   }
+  
 }

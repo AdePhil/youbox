@@ -11,10 +11,36 @@
     right: 0;
     top: 0;
     width: 100%;
+    
+   
     &-logo {
       color: var(--white);
       font-size: 20px;
       font-family: 'Sofia', cursive;
+      display: inline-flex; 
+      align-items: center;
+
+      &.mobile {
+        display: none;
+      }
+      @media(max-width: 1200px){
+        &.mobile {
+          display: inline-flex;
+          padding: 18px 24px;
+        }
+      }
+
+      .icon-button{
+        padding: 0;
+        margin-right: 5px;
+        cursor: pointer;
+        svg {
+          width: 20px;
+          height: 20px;
+          fill: #fff;
+        }
+      }
+      
       &-text {
        margin: 0;
       }

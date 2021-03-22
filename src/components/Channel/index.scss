@@ -2,6 +2,7 @@
   display: flex;
   padding: 8px 24px;
   align-items: center;
+  cursor: pointer;
 
   &__image {
     border-radius: 60%;
@@ -14,6 +15,7 @@
     margin:  0;
     flex: 1;
     font-size: 13px;
+    color: #fff;
   }
 
   .new-video {
