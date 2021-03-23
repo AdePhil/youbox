@@ -8,7 +8,6 @@ import ChatList from '../../components/ChatList/ChatList';
 
 const VideoDetails = () => {
   const { id } = useParams();
-  console.log(videos);
   const {
     url,
     isLive,

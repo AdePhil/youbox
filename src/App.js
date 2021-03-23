@@ -20,7 +20,7 @@ function App() {
             <Route path="/video/:id">
               <VideoDetails />
             </Route>
-            <Route path="/profile">
+            <Route path="/profile/:userName">
               <Profile />
             </Route>
           </Switch>
