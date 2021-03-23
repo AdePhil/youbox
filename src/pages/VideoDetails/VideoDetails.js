@@ -16,7 +16,6 @@ const VideoDetails = () => {
     channelName,
     subs,
     videoTitle,
-    views,
   } = videos.find((v) => v.id === Number.parseInt(id));
   console.log(url);
   const videoSettings = {

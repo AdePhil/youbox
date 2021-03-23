@@ -1,5 +1,6 @@
 import './index.scss';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const VideoSideCard = ({ thumnail, channelName, views, date, videoTitle }) => (
   <Link className="video-side-card">
@@ -24,4 +25,11 @@ const VideoSideCard = ({ thumnail, channelName, views, date, videoTitle }) => (
   </Link>
 );
 
+VideoSideCard.propTypes = {
+  thumnail: PropTypes.string,
+  channelName: PropTypes.string,
+  views: PropTypes.string,
+  date: PropTypes.string,
+  videoTitle: PropTypes.string,
+};
 export default VideoSideCard;

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import './index.scss';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 const AppHeader = ({ activeNav, setNavActive }) => {
   const history = useHistory();
