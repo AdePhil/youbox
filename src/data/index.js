@@ -4,11 +4,13 @@ export const videos = [
     thumnail:
       'https://i.ytimg.com/vi/lNsJRM9ga-s/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDDYZLDQ8-EzdZl5pc197KCPkrxzA',
     channelLogo:
-      'https://yt3.ggpht.com/ytc/AAUvwniqkVXvK9dEpAu9Mkpyz46oCwFYOgg5ummDXx0c=s176-c-k-c0x00ffffff-no-rj',
-    videoTitle: 'Chill lofi beats',
+      'https://yt3.ggpht.com/ytc/AAUvwnjjfvVnm4hIninPJdNRfwQ_QforbmpKGG20LmEj6g=s176-c-k-c0x00ffffff-no-rj',
+    videoTitle: 'Docker Postgres and DataGrip Tutorial',
     views: '91K views',
-    channelName: 'Joma tech',
+    channelName: 'Amigoscode',
     date: '9 hours ago',
+    subs: '2k Subscribers',
+    url: 'https://www.youtube.com/watch?v=lNsJRM9ga-s',
     isLive: true,
   },
   {
@@ -21,18 +23,22 @@ export const videos = [
     channelName: 'Ali Abdaal',
     views: '91K views',
     date: '9 hours ago',
+    subs: '2k Subscribers',
     isLive: false,
+    url: 'https://www.youtube.com/watch?v=bmVKaAV_7-A',
   },
   {
     id: 3,
     thumnail:
       'https://i.ytimg.com/vi/lNsJRM9ga-s/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDDYZLDQ8-EzdZl5pc197KCPkrxzA',
     channelLogo:
-      'https://yt3.ggpht.com/ytc/AAUvwniqkVXvK9dEpAu9Mkpyz46oCwFYOgg5ummDXx0c=s176-c-k-c0x00ffffff-no-rj',
-    videoTitle: 'Chill lofi beats',
+      'https://yt3.ggpht.com/ytc/AAUvwnjjfvVnm4hIninPJdNRfwQ_QforbmpKGG20LmEj6g=s176-c-k-c0x00ffffff-no-rj',
+    videoTitle: 'Docker Postgres and DataGrip Tutorial',
     views: '91K views',
-    channelName: 'Joma tech',
+    channelName: 'Amigoscode',
     date: '9 hours ago',
+    subs: '2k Subscribers',
+    url: 'https://www.youtube.com/watch?v=lNsJRM9ga-s',
     isLive: true,
   },
   {
@@ -40,12 +46,14 @@ export const videos = [
     thumnail:
       'https://i.ytimg.com/vi/lNsJRM9ga-s/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDDYZLDQ8-EzdZl5pc197KCPkrxzA',
     channelLogo:
-      'https://yt3.ggpht.com/ytc/AAUvwniqkVXvK9dEpAu9Mkpyz46oCwFYOgg5ummDXx0c=s176-c-k-c0x00ffffff-no-rj',
-    videoTitle: 'Chill lofi beats',
+      'https://yt3.ggpht.com/ytc/AAUvwnjjfvVnm4hIninPJdNRfwQ_QforbmpKGG20LmEj6g=s176-c-k-c0x00ffffff-no-rj',
+    videoTitle: 'Docker Postgres and DataGrip Tutorial',
     views: '91K views',
-    channelName: 'Joma tech',
+    channelName: 'Amigoscode',
     date: '9 hours ago',
-    isLive: false,
+    subs: '2k Subscribers',
+    url: 'https://www.youtube.com/watch?v=lNsJRM9ga-s',
+    isLive: true,
   },
   {
     id: 5,
@@ -57,7 +65,9 @@ export const videos = [
     channelName: 'Ali Abdaal',
     views: '91K views',
     date: '9 hours ago',
+    subs: '2k Subscribers',
     isLive: false,
+    url: 'https://www.youtube.com/watch?v=bmVKaAV_7-A',
   },
   {
     id: 6,
@@ -69,7 +79,9 @@ export const videos = [
     views: '91K views',
     channelName: 'Joma tech',
     date: '9 hours ago',
+    subs: '2k Subscribers',
     isLive: true,
+    url: 'https://www.youtube.com/watch?v=bmVKaAV_7-A',
   },
 ];
 
@@ -79,12 +91,14 @@ export const liveVideos = [
     thumnail:
       'https://i.ytimg.com/vi/lNsJRM9ga-s/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDDYZLDQ8-EzdZl5pc197KCPkrxzA',
     channelLogo:
-      'https://yt3.ggpht.com/ytc/AAUvwniqkVXvK9dEpAu9Mkpyz46oCwFYOgg5ummDXx0c=s176-c-k-c0x00ffffff-no-rj',
-    videoTitle: 'Chill lofi beats',
+      'https://yt3.ggpht.com/ytc/AAUvwnjjfvVnm4hIninPJdNRfwQ_QforbmpKGG20LmEj6g=s176-c-k-c0x00ffffff-no-rj',
+    videoTitle: 'Docker Postgres and DataGrip Tutorial',
     views: '91K views',
-    channelName: 'Joma tech',
+    subs: '2k Subscribers',
+    channelName: 'Amigoscode',
     date: '9 hours ago',
     isLive: true,
+    url: 'https://www.youtube.com/watch?v=lNsJRM9ga-s',
   },
   {
     id: 2,
@@ -96,31 +110,37 @@ export const liveVideos = [
     channelName: 'Ali Abdaal',
     views: '91K views',
     date: '9 hours ago',
+    subs: '2k Subscribers',
     isLive: true,
+    url: 'https://www.youtube.com/watch?v=bmVKaAV_7-A',
   },
   {
     id: 3,
     thumnail:
       'https://i.ytimg.com/vi/lNsJRM9ga-s/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDDYZLDQ8-EzdZl5pc197KCPkrxzA',
     channelLogo:
-      'https://yt3.ggpht.com/ytc/AAUvwniqkVXvK9dEpAu9Mkpyz46oCwFYOgg5ummDXx0c=s176-c-k-c0x00ffffff-no-rj',
-    videoTitle: 'Chill lofi beats',
+      'https://yt3.ggpht.com/ytc/AAUvwnjjfvVnm4hIninPJdNRfwQ_QforbmpKGG20LmEj6g=s176-c-k-c0x00ffffff-no-rj',
+    videoTitle: 'Docker Postgres and DataGrip Tutorial',
     views: '91K views',
-    channelName: 'Joma tech',
+    channelName: 'Amigoscode',
     date: '9 hours ago',
+    subs: '2k Subscribers',
     isLive: true,
+    url: 'https://www.youtube.com/watch?v=lNsJRM9ga-s',
   },
   {
     id: 4,
     thumnail:
       'https://i.ytimg.com/vi/lNsJRM9ga-s/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDDYZLDQ8-EzdZl5pc197KCPkrxzA',
     channelLogo:
-      'https://yt3.ggpht.com/ytc/AAUvwniqkVXvK9dEpAu9Mkpyz46oCwFYOgg5ummDXx0c=s176-c-k-c0x00ffffff-no-rj',
-    videoTitle: 'Chill lofi beats',
+      'https://yt3.ggpht.com/ytc/AAUvwnjjfvVnm4hIninPJdNRfwQ_QforbmpKGG20LmEj6g=s176-c-k-c0x00ffffff-no-rj',
+    videoTitle: 'Docker Postgres and DataGrip Tutorial',
     views: '91K views',
-    channelName: 'Joma tech',
+    channelName: 'Amigoscode',
     date: '9 hours ago',
+    subs: '2k Subscribers',
     isLive: true,
+    url: 'https://www.youtube.com/watch?v=lNsJRM9ga-s',
   },
   {
     id: 5,
@@ -132,7 +152,9 @@ export const liveVideos = [
     channelName: 'Ali Abdaal',
     views: '91K views',
     date: '9 hours ago',
+    subs: '2k Subscribers',
     isLive: true,
+    url: 'https://www.youtube.com/watch?v=bmVKaAV_7-A',
   },
   {
     id: 6,
@@ -144,6 +166,13 @@ export const liveVideos = [
     views: '91K views',
     channelName: 'Joma tech',
     date: '9 hours ago',
+    subs: '2k Subscribers',
     isLive: true,
+    url: 'https://www.youtube.com/watch?v=bmVKaAV_7-A',
   },
 ];
+
+export const myChannel = {
+  banner:
+    'https://yt3.ggpht.com/TdpnF_rLXL-u783mrIbl0KOaqGXKBuWqkUQq3Fr5kfsQQOm6p96zERg7dbvZGIQitM8kM4MA9co=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj',
+};

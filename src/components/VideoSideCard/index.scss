@@ -1,0 +1,29 @@
+.video-side-card{
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  &__image{
+    width: 168px;
+    height: 94px;
+    object-fit: contain;
+    margin-right: 8px;
+  }
+  &__details-description{
+    &-video-title {
+      margin-bottom: 5px;
+      font-size: 14px;
+      margin-top: 0;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      color: #fff;
+
+    }
+    &-channel-name, &-video-extra{
+      color: var(--text-secondary);
+      font-weight: bold;
+      font-size: 12px;
+      margin: 0;
+    }
+  }
+}

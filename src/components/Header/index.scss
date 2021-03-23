@@ -12,6 +12,7 @@
     top: 0;
     width: 100%;
     
+    
    
     &-logo {
       color: var(--white);
@@ -34,6 +35,10 @@
         padding: 0;
         margin-right: 5px;
         cursor: pointer;
+        display: none;
+        @media(max-width: 1200px) {
+          display: inline-block;
+        }
         svg {
           width: 20px;
           height: 20px;
@@ -43,6 +48,12 @@
       
       &-text {
        margin: 0;
+       font-size: 32px;
+       background: transparent;
+       border: none;
+       outline: none;
+       color: var(--white);
+       cursor: pointer;
       }
     }
     &-search {

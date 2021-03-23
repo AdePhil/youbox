@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.scss';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const VideoThumnail = ({
   thumnail,
@@ -10,8 +11,9 @@ const VideoThumnail = ({
   date,
   channelName,
   isLive,
+  id,
 }) => (
-  <div className="video">
+  <Link className="video" to={`/video/${id}`}>
     <img className="video__img" src={thumnail} alt="video-thumnail" />
     <div className="video__details">
       <img
@@ -30,7 +32,7 @@ const VideoThumnail = ({
       </div>
     </div>
     {isLive && <div className="video__live">LIVE</div>}
-  </div>
+  </Link>
 );
 
 VideoThumnail.propTypes = {
@@ -41,6 +43,7 @@ VideoThumnail.propTypes = {
   date: PropTypes.string,
   channelName: PropTypes.string,
   isLive: PropTypes.bool,
+  id: PropTypes.number,
 };
 
 export default VideoThumnail;

@@ -1,6 +1,10 @@
 .video {
   position: relative;
   cursor: pointer;
+  display: block;
+  text-decoration: none;
+  overflow: hidden;
+  color: #fff;
   &__img {
     width: 100%;
   }
@@ -33,6 +37,8 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        color: #fff;
+        word-wrap: break-word;
 
       }
       &-channel-name, &-video-extra{
