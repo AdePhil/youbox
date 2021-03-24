@@ -19,6 +19,7 @@ const Profile = () => {
   const { channelLogo, channelName, subs, banner } = channel;
 
   const [activeTab, setActiveTab] = useState(tab);
+  const [subscribe, setSubscribe] = useState(true);
 
   useEffect(() => {
     if (tab) {
@@ -53,9 +54,14 @@ const Profile = () => {
             <div className="flex video-details__profile-buttons">
               <button
                 type="button"
-                className="video-details__profile-buttons-subscription"
+                onClick={() => setSubscribe(!subscribe)}
+                className={
+                  subscribe
+                    ? 'video-details__profile-buttons-subscription active'
+                    : 'video-details__profile-buttons-subscription'
+                }
               >
-                Subscribed
+                {subscribe ? 'Subscribed' : 'Subscribe'}
               </button>
               <button type="button" className="icon-button header-icon">
                 <svg

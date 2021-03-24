@@ -84,10 +84,16 @@
           align-items: center;
         }
         &-subscription {
-          background-color: red;
-          color:  var(--white);
           border: none;
           padding: 10px 16px;
+          &:focus, &:active {
+            border: none;
+            outline: none;
+          }
+          &.active {
+            background-color: red;
+            color:  var(--white);
+          }
         }
       }
     }
