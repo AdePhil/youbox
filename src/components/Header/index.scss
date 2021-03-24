@@ -68,6 +68,9 @@
        cursor: pointer;
        font-family: 'Sofia', cursive;
        font-weight: bold;
+       @media(max-width: 600px) {
+         padding: 0;
+       }
       }
     }
     &-search {
