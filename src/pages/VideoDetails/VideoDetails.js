@@ -70,7 +70,12 @@ const VideoDetails = () => {
             <div className="flex video-details__profile-buttons">
               {!isMyVideo && (
                 <div>
-                  <button type="button">Subscribed</button>
+                  <button
+                    type="button"
+                    className="video-details__profile-buttons-subscription"
+                  >
+                    Subscribed
+                  </button>
                   <button type="button" className="icon-button header-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

@@ -28,7 +28,7 @@ const ChatList = () => (
           src="https://yt4.ggpht.com/ytc/AAUvwngfK9LWbuDty9aCj0EGb1gDTr-PdTElSJ1ZwCP5rw=s32-c-k-c0x00ffffff-no-rj"
         />
         <p>
-          <span className="chat-title">The CS Content</span>
+          <span className="chat-title">Tobi Adeyanju</span>
           <span className="chat-text">yes!!!</span>
         </p>
       </div>
@@ -39,8 +39,8 @@ const ChatList = () => (
           src="https://yt4.ggpht.com/ytc/AAUvwnhRf4taMcWEa4fa-VQgifwLiYlaWCrSoMh3LxVh=s32-c-k-c0x00ffffff-no-rj"
         />
         <p>
-          <span className="chat-title">The CS Content</span>
-          <span className="chat-text">yes!!!</span>
+          <span className="chat-title">Tunde Max</span>
+          <span className="chat-text">Good music</span>
         </p>
       </div>
       <div className="chat d-flex">
@@ -51,7 +51,7 @@ const ChatList = () => (
         />
         <p>
           <span className="chat-title">The CS Content</span>
-          <span className="chat-text">Hi Guys!!</span>
+          <span className="chat-text">Awesome work Guys</span>
         </p>
       </div>
       <div className="chat d-flex">

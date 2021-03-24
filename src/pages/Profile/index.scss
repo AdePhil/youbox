@@ -68,11 +68,15 @@
       }
       &-buttons{
         margin-left: auto;
+        &> * {
+          display: inline-flex;
+          align-items: center;
+        }
         &-subscription {
           background-color: red;
           color:  var(--white);
           border: none;
-
+          padding: 10px 16px;
         }
       }
     }
