@@ -1,8 +1,15 @@
 import './index.scss';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
-const Channel = ({ channelName, channelLogo, hasNewVideo, isLive }) => (
-  <div className="channel">
+const Channel = ({
+  channelName,
+  channelLogo,
+  hasNewVideo,
+  isLive,
+  username,
+}) => (
+  <Link className="channel" to={`/profile/${username}?tab=videos`}>
     <img
       id="img"
       className="channel__image"
@@ -32,7 +39,7 @@ const Channel = ({ channelName, channelLogo, hasNewVideo, isLive }) => (
       </button>
     )}
     {!isLive && hasNewVideo && <div className="new-video" />}
-  </div>
+  </Link>
 );
 
 Channel.propTypes = {
@@ -40,6 +47,7 @@ Channel.propTypes = {
   channelLogo: PropTypes.string,
   hasNewVideo: PropTypes.bool,
   isLive: PropTypes.bool,
+  username: PropTypes.string,
 };
 
 export default Channel;

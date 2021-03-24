@@ -11,6 +11,6 @@ const axiosInstance = axios.create({
 const api = apisauce.create({ axiosInstance, timeout: 30000 });
 export default {
   getCategoryVideos: () => api.get('/categoryvideos'),
-  getUploadedVideos: () => api.get('/uploadedvideos'),
+  getUploadedVideos: (userName) => api.get('/uploadedvideos', { userName }),
   getVideoDetails: (id) => api.get('/videodetails', { id }),
 };

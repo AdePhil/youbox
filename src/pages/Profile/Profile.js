@@ -102,7 +102,7 @@ const Profile = () => {
       </div>
       <div className="profile__tabs-container">
         {activeTab === 'new-video' && <VideoUpload />}
-        {activeTab === 'videos' && <ProfileVideoList />}
+        {activeTab === 'videos' && <ProfileVideoList userName={userName} />}
       </div>
     </div>
   );

@@ -1,11 +1,12 @@
 import './index.scss';
 import { useCallback, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import PropTypes from 'prop-types';
 import VideoThumnail from '../VideoThumnail/VideoThumnail';
 import { getUploadedVideos } from '../../redux/actions';
 import Loader from '../Loader/Loader';
 
-const ProfileVideoList = () => {
+const ProfileVideoList = ({ userName }) => {
   const dispatch = useDispatch();
   const getUploadedVideosCallback = useCallback(
     (payload) => dispatch(getUploadedVideos(payload)),
@@ -20,8 +21,8 @@ const ProfileVideoList = () => {
   );
 
   useEffect(() => {
-    getUploadedVideosCallback();
-  }, [getUploadedVideosCallback]);
+    getUploadedVideosCallback(userName);
+  }, [getUploadedVideosCallback, userName]);
 
   if (fetchingUploadedVideos) {
     return <Loader />;
@@ -35,5 +36,7 @@ const ProfileVideoList = () => {
   );
 };
 
-ProfileVideoList.propTypes = {};
+ProfileVideoList.propTypes = {
+  userName: PropTypes.string,
+};
 export default ProfileVideoList;

@@ -28,13 +28,9 @@ exports.handler = async function (event, context) {
     type: 'upload',
   };
   video = await new Promise((resolve, reject) => {
-    cloudinary.api.resource(
-      'youbox/wzo4wm8esuwbq9vg67su',
-      options,
-      function (error, result) {
-        resolve(result);
-      }
-    );
+    cloudinary.api.resource(id, options, function (error, result) {
+      resolve(result);
+    });
   });
 
   return {

@@ -1,4 +1,5 @@
 const cloudinary = require('cloudinary').v2;
+const { videos: defaultVideos } = require('./data/index');
 
 const getThumbNail = (url) => {
   const urlSplit = url.split('.');
@@ -6,6 +7,7 @@ const getThumbNail = (url) => {
   return `${urlWithExtensionArray.join('.')}.jpg`;
 };
 exports.handler = async function (event, context) {
+  const { userName } = event.queryStringParameters;
   const options = {
     resource_type: 'video',
     cloud_name: process.env.REACT_APP_CLOUD_NAME,
@@ -14,25 +16,33 @@ exports.handler = async function (event, context) {
     prefix: 'youbox',
     type: 'upload',
   };
-  const videos = await new Promise((resolve, reject) => {
-    cloudinary.api.resources(options, function (error, result) {
-      resolve(result);
+  let videos = [];
+
+  console.log(userName);
+  if (userName !== 'currentUser') {
+    videos = defaultVideos.filter((video) => video.username === userName);
+  } else {
+    videos = await new Promise((resolve, reject) => {
+      cloudinary.api.resources(options, function (error, result) {
+        resolve(result);
+      });
     });
-  });
+    videos = videos.resources.map((video, i) => ({
+      ...video,
+      id: video.public_id,
+      thumnail: getThumbNail(video.url),
+      videoTitle: `Video ${i + 1}`,
+      channelLogo:
+        'https://static-cdn.jtvnw.net/user-default-pictures-uv/215b7342-def9-11e9-9a66-784f43822e80-profile_image-70x70.png',
+      channelName: 'Current User',
+      isLive: false,
+    }));
+  }
 
   return {
     statusCode: 200,
     body: JSON.stringify({
-      data: videos.resources.map((video, i) => ({
-        ...video,
-        id: video.public_id,
-        thumnail: getThumbNail(video.url),
-        videoTitle: `Video ${i + 1}`,
-        channelLogo:
-          'https://static-cdn.jtvnw.net/user-default-pictures-uv/215b7342-def9-11e9-9a66-784f43822e80-profile_image-70x70.png',
-        channelName: 'Current User',
-        isLive: false,
-      })),
+      data: videos,
     }),
   };
 };
