@@ -1,17 +1,17 @@
 import './index.scss';
 import PropTypes from 'prop-types';
 
-const Channel = ({ name, img, hasNewVideo, isLive }) => (
+const Channel = ({ channelName, channelLogo, hasNewVideo, isLive }) => (
   <div className="channel">
     <img
       id="img"
       className="channel__image"
       height="24"
       width="24"
-      src={img}
+      src={channelLogo}
       alt="avatar"
     />
-    <p className="channel__channel-name">{name}</p>
+    <p className="channel__channel-name">{channelName}</p>
 
     {isLive && (
       <button type="button" className="icon-button live-icon">
@@ -36,8 +36,8 @@ const Channel = ({ name, img, hasNewVideo, isLive }) => (
 );
 
 Channel.propTypes = {
-  name: PropTypes.string,
-  img: PropTypes.string,
+  channelName: PropTypes.string,
+  channelLogo: PropTypes.string,
   hasNewVideo: PropTypes.bool,
   isLive: PropTypes.bool,
 };

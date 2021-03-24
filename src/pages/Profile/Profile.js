@@ -1,16 +1,20 @@
 import { useParams } from 'react-router';
 import './index.scss';
 import { useState } from 'react';
-import { videos } from '../../data';
+import { videos, currentChannel } from '../../data';
 import VideoUpload from '../../components/VideoUpload/VideoUpload';
 import ProfileVideoList from '../../components/ProfileVideoList/ProfileVideoList';
 
 const Profile = () => {
   const { userName } = useParams();
+  let channel = {};
+  if (userName === 'currentUser') {
+    channel = currentChannel;
+  } else {
+    channel = videos.find((video) => video.username === userName);
+  }
+  const { channelLogo, channelName, subs, banner } = channel;
 
-  const { channelLogo, channelName, subs, banner } = videos.find(
-    (video) => video.username === userName
-  );
   const [activeTab, setActiveTab] = useState('new-video');
   return (
     <div className="profile">
@@ -38,7 +42,12 @@ const Profile = () => {
               <p className="video-details__profile-subs">{subs}</p>
             </div>
             <div className="flex video-details__profile-buttons">
-              <button type="button">Subscribed</button>
+              <button
+                type="button"
+                className="video-details__profile-buttons-subscription"
+              >
+                Subscribed
+              </button>
               <button type="button" className="icon-button header-icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

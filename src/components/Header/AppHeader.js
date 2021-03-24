@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import './index.scss';
 import { useHistory } from 'react-router-dom';
-import { currentUserName } from '../../data';
 
 const AppHeader = ({ activeNav, setNavActive }) => {
   const history = useHistory();
@@ -77,7 +76,7 @@ const AppHeader = ({ activeNav, setNavActive }) => {
           <button
             type="button"
             className="icon-button"
-            onClick={() => history.push(`/profile/${currentUserName}`)}
+            onClick={() => history.push(`/profile/currentUser`)}
           >
             <img
               className="app__header-image"

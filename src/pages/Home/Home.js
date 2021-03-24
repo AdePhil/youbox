@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import VideoList from '../../components/VideoList/VideoList';
 import './index.scss';
-// import { videos, liveVideos } from '../../data';
 import { getCategoryVideos } from '../../redux/actions';
 import Loader from '../../components/Loader/Loader';
 
@@ -25,7 +24,7 @@ const Home = () => {
 
   useEffect(() => {
     getCategoryVideosCallback();
-  }, []);
+  }, [getCategoryVideosCallback]);
 
   if (fetchingCategoryVideos) {
     return <Loader />;

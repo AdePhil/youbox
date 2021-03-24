@@ -18,9 +18,11 @@ const VideoSideCard = ({ thumnail, channelName, views, date, videoTitle }) => (
       <p className="video-side-card__details-description-channel-name">
         {channelName}
       </p>
-      <p className="video-side-card__details-description-video-extra">
-        <span>{views}</span> • <span> {date}</span>
-      </p>
+      {views && (
+        <p className="video-side-card__details-description-video-extra">
+          <span>{views}</span> • <span> {date}</span>
+        </p>
+      )}
     </div>
   </Link>
 );

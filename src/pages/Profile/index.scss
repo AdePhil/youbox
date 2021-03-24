@@ -68,6 +68,12 @@
       }
       &-buttons{
         margin-left: auto;
+        &-subscription {
+          background-color: red;
+          color:  var(--white);
+          border: none;
+
+        }
       }
     }
   }

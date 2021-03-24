@@ -1,4 +1,4 @@
-export const videos = [
+exports.videos = [
   {
     id: '1',
     thumnail:
@@ -121,20 +121,4 @@ export const videos = [
   },
 ];
 
-export const currentChannel = {
-  id: '29',
-  thumnail:
-    'https://i.ytimg.com/vi/rYnUs7D_-lI/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDETNbP4aArrnwS8oZPjVB2OA0B2A',
-  username: 'currentUser',
-  banner:
-    'https://yt3.ggpht.com/i2GHtUJUr4H2PE7yiHpIDwBymavz6iVTDRPpXN5WSgKkqnvjfj3kFA-oPG0Xe0_stuxAt0Ug=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj',
-  channelLogo:
-    'https://static-cdn.jtvnw.net/user-default-pictures-uv/215b7342-def9-11e9-9a66-784f43822e80-profile_image-70x70.png',
-  videoTitle: 'Laycon - HipHop feat. Deshinor (Official Video)',
-  views: '1.6M views',
-  subs: '2k Subscribers',
-  channelName: 'Current User',
-  date: '3 months ago',
-  isLive: true,
-  url: 'https://www.youtube.com/watch?v=rYnUs7D_-lI',
-};
+// export const currentUserName = 'amigo';

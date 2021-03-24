@@ -13,7 +13,7 @@ const VideoThumnail = ({
   isLive,
   id,
 }) => (
-  <Link className="video" to={`/video/${id}`}>
+  <Link className="video" to={`/video/${encodeURIComponent(id)}`}>
     <img className="video__img" src={thumnail} alt="video-thumnail" />
     <div className="video__details">
       <img
@@ -43,7 +43,17 @@ VideoThumnail.propTypes = {
   date: PropTypes.string,
   channelName: PropTypes.string,
   isLive: PropTypes.bool,
-  id: PropTypes.number,
+  id: PropTypes.string,
+};
+
+VideoThumnail.defualtProps = {
+  thumnail: '',
+  channelLogo: '',
+  videoTitle: '',
+  views: '',
+  date: '',
+  channelName: '',
+  isLive: false,
 };
 
 export default VideoThumnail;
