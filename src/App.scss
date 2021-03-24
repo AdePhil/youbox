@@ -36,3 +36,16 @@ body {
   margin: 0 auto;
   width: 100%;
 }
+
+#nprogress .bar {
+  background: var(--red);
+}
+
+#nprogress .spinner{
+    display: none ;
+}
+
+#nprogress .peg {
+  background: var(--red);
+  box-shadow:  0 0 10px var(--red), 0 0 5px var(--red)
+}

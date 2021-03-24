@@ -2,8 +2,15 @@ import './index.scss';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-const VideoSideCard = ({ thumnail, channelName, views, date, videoTitle }) => (
-  <Link className="video-side-card">
+const VideoSideCard = ({
+  thumnail,
+  channelName,
+  views,
+  date,
+  videoTitle,
+  id,
+}) => (
+  <Link className="video-side-card" to={`/video/${id}`}>
     <img
       id="img"
       alt="avatar"
@@ -33,5 +40,6 @@ VideoSideCard.propTypes = {
   views: PropTypes.string,
   date: PropTypes.string,
   videoTitle: PropTypes.string,
+  id: PropTypes.string,
 };
 export default VideoSideCard;

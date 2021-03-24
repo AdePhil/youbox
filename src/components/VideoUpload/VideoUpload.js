@@ -5,7 +5,8 @@ const VideoUpload = () => {
     {
       cloudName: process.env.REACT_APP_CLOUD_NAME,
       uploadPreset: process.env.REACT_APP_PRESET_NAME,
-      maxFileSize: 1,
+      maxFileSize: 200000000,
+      resourceType: 'video',
     },
     (error, result) => {
       if (!error && result && result.event === 'success') {
