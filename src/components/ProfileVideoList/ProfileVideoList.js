@@ -19,8 +19,6 @@ const ProfileVideoList = () => {
     })
   );
 
-  console.log(uploadedVideos);
-
   useEffect(() => {
     getUploadedVideosCallback();
   }, [getUploadedVideosCallback]);

@@ -1,7 +1,6 @@
 import './index.scss';
 
 const VideoUpload = () => {
-  console.log(window.cloudinary);
   const widget = window.cloudinary.createUploadWidget(
     {
       cloudName: process.env.REACT_APP_CLOUD_NAME,

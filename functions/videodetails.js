@@ -9,7 +9,6 @@ const getThumbNail = (url) => {
 
 exports.handler = async function (event, context) {
   const { id } = event.queryStringParameters;
-  console.log(videos, id);
   let video = videos.find((v) => v.id === id);
 
   if (video) {

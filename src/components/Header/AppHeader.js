@@ -43,7 +43,11 @@ const AppHeader = ({ activeNav, setNavActive }) => {
           />
         </div>
         <div className="flex align-items-center">
-          <button type="button" className="icon-button header-icon">
+          <button
+            type="button"
+            className="icon-button header-icon"
+            onClick={() => history.push('/profile/currentUser?tab=new-video')}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -76,7 +80,7 @@ const AppHeader = ({ activeNav, setNavActive }) => {
           <button
             type="button"
             className="icon-button"
-            onClick={() => history.push(`/profile/currentUser`)}
+            onClick={() => history.push(`/profile/currentUser?tab=videos`)}
           >
             <img
               className="app__header-image"

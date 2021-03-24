@@ -6,7 +6,6 @@ export const getUploadedVideos = () => async (dispatch) => {
     dispatch({ type: t.GET_UPLOADED_VIDEOS.REQUEST });
     const response = await api.getUploadedVideos();
     if (response.ok) {
-      console.log(response.data.data);
       dispatch({
         type: t.GET_UPLOADED_VIDEOS.SUCCESS,
         payload: response.data.data,

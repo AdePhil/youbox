@@ -12,17 +12,22 @@ const VideoThumnail = ({
   channelName,
   isLive,
   id,
+  username,
 }) => (
-  <Link className="video" to={`/video/${encodeURIComponent(id)}`}>
-    <img className="video__img" src={thumnail} alt="video-thumnail" />
+  <div className="video">
+    <Link className="video" to={`/video/${encodeURIComponent(id)}`}>
+      <img className="video__img" src={thumnail} alt="video-thumnail" />
+    </Link>
     <div className="video__details">
-      <img
-        id="img"
-        alt="avatar"
-        width="48"
-        src={channelLogo}
-        className="video__details-channel-logo"
-      />
+      <Link to={`/profile/${username}?tab=videos`}>
+        <img
+          id="img"
+          alt="avatar"
+          width="48"
+          src={channelLogo}
+          className="video__details-channel-logo"
+        />
+      </Link>
       <div className="video__details-description">
         <p className="video__details-description-video-title">{videoTitle}</p>
         <p className="video__details-description-channel-name">{channelName}</p>
@@ -32,7 +37,7 @@ const VideoThumnail = ({
       </div>
     </div>
     {isLive && <div className="video__live">LIVE</div>}
-  </Link>
+  </div>
 );
 
 VideoThumnail.propTypes = {
@@ -44,6 +49,7 @@ VideoThumnail.propTypes = {
   channelName: PropTypes.string,
   isLive: PropTypes.bool,
   id: PropTypes.string,
+  username: PropTypes.string,
 };
 
 VideoThumnail.defualtProps = {
@@ -54,6 +60,7 @@ VideoThumnail.defualtProps = {
   date: '',
   channelName: '',
   isLive: false,
+  username: 'currentUser',
 };
 
 export default VideoThumnail;

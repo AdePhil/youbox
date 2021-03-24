@@ -1,12 +1,15 @@
-import { useParams } from 'react-router';
+import { useLocation, useParams } from 'react-router';
 import './index.scss';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { videos, currentChannel } from '../../data';
 import VideoUpload from '../../components/VideoUpload/VideoUpload';
 import ProfileVideoList from '../../components/ProfileVideoList/ProfileVideoList';
 
 const Profile = () => {
   const { userName } = useParams();
+  const { search } = useLocation();
+  const searchParams = new URLSearchParams(search);
+  const tab = searchParams.get('tab');
   let channel = {};
   if (userName === 'currentUser') {
     channel = currentChannel;
@@ -15,7 +18,13 @@ const Profile = () => {
   }
   const { channelLogo, channelName, subs, banner } = channel;
 
-  const [activeTab, setActiveTab] = useState('new-video');
+  const [activeTab, setActiveTab] = useState(tab);
+
+  useEffect(() => {
+    if (tab) {
+      setActiveTab(tab);
+    }
+  }, [tab]);
   return (
     <div className="profile">
       <div
@@ -66,17 +75,19 @@ const Profile = () => {
             </div>
           </div>
           <div className="profile__tabs">
-            <button
-              type="button"
-              className={
-                activeTab === 'new-video'
-                  ? 'profile__tab active'
-                  : 'profile__tab'
-              }
-              onClick={() => setActiveTab('new-video')}
-            >
-              Upload Video
-            </button>
+            {userName === 'currentUser' && (
+              <button
+                type="button"
+                className={
+                  activeTab === 'new-video'
+                    ? 'profile__tab active'
+                    : 'profile__tab'
+                }
+                onClick={() => setActiveTab('new-video')}
+              >
+                Upload Video
+              </button>
+            )}
             <button
               type="button"
               className={

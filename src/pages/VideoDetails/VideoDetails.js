@@ -24,8 +24,7 @@ const VideoDetails = () => {
   }));
 
   useEffect(() => {
-    const decodedUrlParam = decodeURIComponent(id);
-    getCategoryVideosCallback(decodeURIComponent(decodedUrlParam));
+    getCategoryVideosCallback(decodeURIComponent(id));
   }, [getCategoryVideosCallback, id]);
   const {
     url,
@@ -36,7 +35,6 @@ const VideoDetails = () => {
     videoTitle,
     isMyVideo,
   } = video;
-  console.log({ video });
   const videoSettings = {
     width: '100%',
     height: '100%',
