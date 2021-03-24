@@ -46,6 +46,18 @@ const VideoDetails = () => {
 
   const [subscribe, setSubscribe] = useState(subscribed);
 
+  const copyLink = async () => {
+    if (!navigator.clipboard) {
+      // Clipboard API not available
+      return;
+    }
+    try {
+      await navigator.clipboard.writeText(url);
+    } catch (err) {
+      console.error('Failed to copy!', err);
+    }
+  };
+
   useEffect(() => {
     setLike(liked);
   }, [liked]);
@@ -132,6 +144,26 @@ const VideoDetails = () => {
                     </g>
                   </svg>
                   <span>{dislikes}</span>
+                </button>
+                <button
+                  type="button"
+                  className="icon-button"
+                  onClick={copyLink}
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    preserveAspectRatio="xMidYMid meet"
+                    focusable="false"
+                    className="style-scope yt-icon"
+                  >
+                    <g mirror-in-rtl="" className="style-scope yt-icon">
+                      <path
+                        d="M14 9V3L22 12L14 21V15C8.44 15 4.78 17.03 2 21C3.11 15.33 6.22 10.13 14 9Z"
+                        className="style-scope yt-icon"
+                      />
+                    </g>
+                  </svg>
+                  <span>SHARE</span>
                 </button>
               </div>
             )}

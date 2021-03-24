@@ -22,6 +22,7 @@
   &__title {
     padding: 20px 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     &>* {
@@ -33,6 +34,7 @@
 
   }
   &__socials {
+    margin-left: 20px;
     display: flex;
     .icon-button {
       color: var(--white);
