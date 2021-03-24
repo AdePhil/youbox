@@ -1,5 +1,7 @@
 .home {
   color: var(--white);
   padding: 30px 40px;
-  
+  @media(max-width: 600px){
+    padding: 30px 10px;
+  }
 }
