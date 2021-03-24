@@ -12,7 +12,7 @@ number of subscribers.
 - View Recommended channels.
 - Play videos on the system (Simulated with youtube links) and the ones uploaded by the user.
 - Like Videos.
-- Share Videos.
+- Share Videos **(Click the share button to copy the video link)**.
 - Display a discount banner for users from the US. **(Location is detected using the IP Address of the user)**
 - Comment on Videos.
 - Testing...Not done because of strict adherence rule (Prefered testing framework is react testing library).
