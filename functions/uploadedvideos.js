@@ -18,7 +18,6 @@ exports.handler = async function (event, context) {
   };
   let videos = [];
 
-  console.log(userName);
   if (userName !== 'currentUser') {
     videos = defaultVideos.filter((video) => video.username === userName);
   } else {

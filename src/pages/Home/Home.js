@@ -20,8 +20,6 @@ const Home = () => {
     })
   );
 
-  console.log(categoryVideos, fetchingCategoryVideos);
-
   useEffect(() => {
     getCategoryVideosCallback();
   }, [getCategoryVideosCallback]);

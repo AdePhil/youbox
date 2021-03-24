@@ -8,11 +8,7 @@ const VideoUpload = () => {
       maxFileSize: 200000000,
       resourceType: 'video',
     },
-    (error, result) => {
-      if (!error && result && result.event === 'success') {
-        console.log('Done uploading..: ', result.info);
-      }
-    }
+    (error, result) => {}
   );
   return (
     <div className="upload">

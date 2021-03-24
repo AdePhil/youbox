@@ -13,4 +13,5 @@ export default {
   getCategoryVideos: () => api.get('/categoryvideos'),
   getUploadedVideos: (userName) => api.get('/uploadedvideos', { userName }),
   getVideoDetails: (id) => api.get('/videodetails', { id }),
+  getUserLocation: () => api.get('https://extreme-ip-lookup.com/json/'),
 };

@@ -15,7 +15,7 @@ number of subscribers.
 - Like Videos.
 - Share Videos.
 - Comment on Videos.
-- Testing.
+- Testing...Not done because of strict adherence rule (Prefered testing framework is react testing library).
 
 ## Technologies Used
 
@@ -25,10 +25,9 @@ number of subscribers.
 - Redux thunk, axios, apisauce for fetching data from the backend.
 - Netlify for hosting.
 - Netlify Functions for bakend APIs.
-- Mocha and Chai for testing.
 - Nprogress used as a loading indicator.
 - React router for navigation.
-- Cloudinary used as the video upload service,
+- Cloudinary used as the video upload service.
 
 ### Testing Locally
 

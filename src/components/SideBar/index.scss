@@ -4,6 +4,14 @@
     background-color: #1F1F23;
     width: 230px;
     z-index: 3;
+    &-banner{
+      font-size: 10px;
+      color: var(--white);
+      background-color: var(--green);
+      text-align: center;
+      padding: 10px 5px;
+      margin-bottom: 10px;
+    }
     @media(max-width: 1200px) {
       position: fixed;
       transform: translate(-100%);
