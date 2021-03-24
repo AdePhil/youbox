@@ -7,13 +7,13 @@ number of subscribers.
 ## Features Covered
 
 - List of videos that can be watched by the user.
-- Upload videos (mp4,mov,mkv,webm) of file size limit of 200MB. **Note. Cloundinary Max video size is 100MB**.
+- Upload videos **(mp4,mov,mkv,webm)** of file size limit of 200MB. **Note. Cloundinary Max video size is 100MB**.
 - View Channels subscribed to.
 - View Recommended channels.
-- Playing videos on the system and the ones uploaded
-- Search for videos by title.
+- Play videos on the system (Simulated with youtube links) and the ones uploaded by the user.
 - Like Videos.
 - Share Videos.
+- Display a discount banner for users from the US. **(Location is detected using the IP Address of the user)**
 - Comment on Videos.
 - Testing...Not done because of strict adherence rule (Prefered testing framework is react testing library).
 
@@ -28,6 +28,10 @@ number of subscribers.
 - Nprogress used as a loading indicator.
 - React router for navigation.
 - Cloudinary used as the video upload service.
+
+### Video Upload
+
+To upload videos, go to the profile page by clicking on the plus icon in the header, or the profile icon in the header and navigating to the add video tab. To see uploaded videos navigate to the videos tab on the same profile page.
 
 ### Testing Locally
 
